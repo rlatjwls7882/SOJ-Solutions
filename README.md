@@ -5,7 +5,7 @@
 
 | 번호 | 문제 | 난이도 | C++ | Java | Python | Rust |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| [1](https://soj.services/problems/1) | Hello, World! | Bronze V | [✅](./src/1/Main.cpp) | [✅](./src/1/Main.java) | [✅](./src/1/Main.py) | [✅](./src/1/Main.rs) |
+| [1](https://soj.services/problems/1) | Hello, world! | Bronze V | [✅](./src/1/Main.cpp) | [✅](./src/1/Main.java) | [✅](./src/1/Main.py) | [✅](./src/1/Main.rs) |
 | [2](https://soj.services/problems/2) | A+B | Bronze V | [✅](./src/2/Main.cpp) | [✅](./src/2/Main.java) | [✅](./src/2/Main.py) | ❌ |
 | [3](https://soj.services/problems/3) | 수 정렬하기 1 | Bronze III | [✅](./src/3/Main.cpp) | ❌ | ❌ | ❌ |
 | [4](https://soj.services/problems/4) | 수 정렬하기 2 | Bronze I | [✅](./src/4/Main.cpp) | ❌ | ❌ | ❌ |
@@ -49,9 +49,7 @@ src/
 
 ### 작성 규칙
 
-- SOJ에서 통과한 풀이만 추가합니다.
 - 한 문제 디렉터리에는 언어별 대표 풀이 파일을 하나씩 둡니다.
-- 빌드 결과물, 임시 파일, 로컬 테스트 출력 파일은 포함하지 않습니다.
 - 불필요한 최적화보다 읽기 쉬운 코드를 우선합니다.
 - 새 언어 풀이를 추가할 때는 위 표의 파일 이름을 사용합니다.
 
