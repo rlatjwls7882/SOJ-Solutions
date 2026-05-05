@@ -11,7 +11,7 @@
 | [4](https://soj.services/problems/4) | 수 정렬하기 2 | Bronze I | [✅](./src/4/Main.cpp) | ❌ | ❌ | ❌ |
 | [5](https://soj.services/problems/5) | 수 정렬하기 3 | Bronze I | [✅](./src/5/Main.cpp) | ❌ | ❌ | ❌ |
 | [6](https://soj.services/problems/6) | 날먹 | Bronze III | ❌ | ❌ | ❌ | ❌ |
-| [7](https://soj.services/problems/7) | 가장 큰 삼각형 만들기 | Silver I | ❌ | ❌ | ❌ | ❌ |
+| [7](https://soj.services/problems/7) | 가장 큰 삼각형 만들기 | Silver I | ❌ | [✅](./src/7/Main.java) | [✅](./src/7/Main.py) | ❌ |
 | [8](https://soj.services/problems/8) | 1차원 사과게임 | Silver II | ❌ | ❌ | ❌ | ❌ |
 | [9](https://soj.services/problems/9) | 러브멜로디 | Silver III | ❌ | ❌ | ❌ | ❌ |
 | [10](https://soj.services/problems/10) | C++ Vector | Bronze III | [✅](./src/10/Main.cpp) | ❌ | ❌ | ❌ |
