@@ -5,8 +5,8 @@
 
 | 번호 | 문제 | 난이도 | C++ | Java | Python | Rust |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| [1](https://soj.services/problems/1) | Hello, World! | Bronze V | [✅](./src/1/Main.cpp) | ❌ | ❌ | ❌ |
-| [2](https://soj.services/problems/2) | A+B | Bronze V | [✅](./src/2/Main.cpp) | ❌ | ❌ | ❌ |
+| [1](https://soj.services/problems/1) | Hello, World! | Bronze V | [✅](./src/1/Main.cpp) | [✅](./src/1/Main.java) | [✅](./src/1/Main.py) | [✅](./src/1/Main.rs) |
+| [2](https://soj.services/problems/2) | A+B | Bronze V | [✅](./src/2/Main.cpp) | [✅](./src/2/Main.java) | [✅](./src/2/Main.py) | ❌ |
 | [3](https://soj.services/problems/3) | 수 정렬하기 1 | Bronze III | [✅](./src/3/Main.cpp) | ❌ | ❌ | ❌ |
 | [4](https://soj.services/problems/4) | 수 정렬하기 2 | Bronze I | [✅](./src/4/Main.cpp) | ❌ | ❌ | ❌ |
 | [5](https://soj.services/problems/5) | 수 정렬하기 3 | Bronze I | [✅](./src/5/Main.cpp) | ❌ | ❌ | ❌ |
@@ -15,6 +15,8 @@
 | [8](https://soj.services/problems/8) | 1차원 사과게임 | Silver II | ❌ | ❌ | ❌ | ❌ |
 | [9](https://soj.services/problems/9) | 러브멜로디 | Silver III | ❌ | ❌ | ❌ | ❌ |
 | [10](https://soj.services/problems/10) | C++ Vector | Bronze III | [✅](./src/10/Main.cpp) | ❌ | ❌ | ❌ |
+| [11](https://soj.services/problems/11) | C++ Set | Silver IV | [✅](./src/11/Main.cpp) | ❌ | ❌ | ❌ |
+| [12](https://soj.services/problems/12) | C++ Map | Silver IV | [✅](./src/12/Main.cpp) | ❌ | ❌ | ❌ |
 
 ## 기여 방법
 
