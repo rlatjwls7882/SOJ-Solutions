@@ -17,6 +17,9 @@
 | [10](https://soj.services/problems/10) | C++ Vector | Bronze III | [✅](./src/10/Main.cpp) | ❌ | ❌ | ❌ |
 | [11](https://soj.services/problems/11) | C++ Set | Silver IV | [✅](./src/11/Main.cpp) | ❌ | ❌ | ❌ |
 | [12](https://soj.services/problems/12) | C++ Map | Silver IV | [✅](./src/12/Main.cpp) | ❌ | ❌ | ❌ |
+| [13](https://soj.services/problems/13) | 세종대왕돈까스 | Gold I | ❌ | ❌ | ❌ | ❌ |
+| [14](https://soj.services/problems/14) | 거듭제곱인가? | Gold IV | ❌ | ❌ | ❌ | ❌ |
+| [15](https://soj.services/problems/15) | 코드포스합시다 | Bronze II | ❌ | ❌ | ❌ | ❌ |
 
 ## 기여 방법
 
