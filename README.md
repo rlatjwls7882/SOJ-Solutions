@@ -5,7 +5,7 @@
 
 | 번호 | 문제 | 난이도 | C++ | Java | Python | Rust |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| [1](https://soj.services/problems/1) | Hello, world! | Bronze V | [✅](./src/1/Main.cpp) | [✅](./src/1/Main.java) | [✅](./src/1/Main.py) | [✅](./src/1/Main.rs) |
+| [1](https://soj.services/problems/1) | Hello, World! | Bronze V | [✅](./src/1/Main.cpp) | [✅](./src/1/Main.java) | [✅](./src/1/Main.py) | [✅](./src/1/Main.rs) |
 | [2](https://soj.services/problems/2) | A+B | Bronze V | [✅](./src/2/Main.cpp) | [✅](./src/2/Main.java) | [✅](./src/2/Main.py) | ❌ |
 | [3](https://soj.services/problems/3) | 수 정렬하기 1 | Bronze III | [✅](./src/3/Main.cpp) | ❌ | ❌ | ❌ |
 | [4](https://soj.services/problems/4) | 수 정렬하기 2 | Bronze I | [✅](./src/4/Main.cpp) | ❌ | ❌ | ❌ |
