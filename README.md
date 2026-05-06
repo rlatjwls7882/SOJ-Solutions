@@ -7,9 +7,9 @@
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: |
 | [1](https://soj.services/problems/1) | Hello, World! | Bronze V | [✅](./src/1/Main.cpp) | [✅](./src/1/Main.java) | [✅](./src/1/Main.py) | [✅](./src/1/Main.rs) |
 | [2](https://soj.services/problems/2) | A+B | Bronze V | [✅](./src/2/Main.cpp) | [✅](./src/2/Main.java) | [✅](./src/2/Main.py) | ❌ |
-| [3](https://soj.services/problems/3) | 수 정렬하기 1 | Bronze III | [✅](./src/3/Main.cpp) | ❌ | ❌ | ❌ |
-| [4](https://soj.services/problems/4) | 수 정렬하기 2 | Bronze I | [✅](./src/4/Main.cpp) | ❌ | ❌ | ❌ |
-| [5](https://soj.services/problems/5) | 수 정렬하기 3 | Bronze I | [✅](./src/5/Main.cpp) | ❌ | ❌ | ❌ |
+| [3](https://soj.services/problems/3) | 수 정렬하기 1 | Bronze III | [✅](./src/3/Main.cpp) | [✅](./src/3/Main.java) | ❌ | ❌ |
+| [4](https://soj.services/problems/4) | 수 정렬하기 2 | Bronze I | [✅](./src/4/Main.cpp) | [✅](./src/4/Main.java) | ❌ | ❌ |
+| [5](https://soj.services/problems/5) | 수 정렬하기 3 | Bronze I | [✅](./src/5/Main.cpp) | [✅](./src/5/Main.java) | ❌ | ❌ |
 | [6](https://soj.services/problems/6) | 날먹 | Bronze III | [✅](./src/6/Main.cpp) | ❌ | ❌ | ❌ |
 | [7](https://soj.services/problems/7) | 가장 큰 삼각형 만들기 | Silver I | [✅](./src/7/Main.cpp) | [✅](./src/7/Main.java) | [✅](./src/7/Main.py) | ❌ |
 | [8](https://soj.services/problems/8) | 1차원 사과게임 | Silver II | [✅](./src/8/Main.cpp) | ❌ | ❌ | ❌ |
