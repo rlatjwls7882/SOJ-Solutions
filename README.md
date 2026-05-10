@@ -20,6 +20,8 @@
 | [13](https://soj.services/problems/13) | 세종대왕돈까스 | Gold I | ❌ | ❌ | ❌ | ❌ |
 | [14](https://soj.services/problems/14) | 거듭제곱인가? | Gold IV | ❌ | ❌ | ❌ | ❌ |
 | [15](https://soj.services/problems/15) | 코드포스합시다 | Bronze II | ❌ | ❌ | ❌ | ❌ |
+| [16](https://soj.services/problems/16) | C++ Stack | Silver IV | ❌ | ❌ | ❌ | ❌ |
+| [17](https://soj.services/problems/17) | C++ Queue | Silver IV | ❌ | ❌ | ❌ | ❌ |
 
 ## 기여 방법
 
