@@ -23,49 +23,6 @@
 | [16](https://soj.services/problems/16) | C++ Stack | Silver IV | [✅](./src/16/Main.cpp) | ❌ | ❌ | ❌ |
 | [17](https://soj.services/problems/17) | C++ Queue | Silver IV | [✅](./src/17/Main.cpp) | ❌ | ❌ | ❌ |
 
-## 기여 방법
-
-풀이를 추가하려면 문제 번호에 맞는 디렉터리 아래에 소스 파일을 넣어주세요.
-
-### 디렉터리 구조
-
-각 풀이 파일은 `src/{problemId}/` 아래에 둡니다.
-
-```text
-src/
-├── 1/
-│   └── Main.cpp
-├── 2/
-│   └── Main.py
-└── 3/
-    └── Main.rs
-```
-
-### 파일 이름
-
-언어별 파일 이름은 SOJ에서 사용하는 공식 소스 파일명을 따릅니다.
-
-| 언어 | 파일 이름 |
-|:---:|:---:|
-| C++ | `Main.cpp` |
-| Java | `Main.java` |
-| Python | `Main.py` |
-| Rust | `Main.rs` |
-
-### 작성 규칙
-
-- 한 문제 디렉터리에는 언어별 대표 풀이 파일을 하나씩 둡니다.
-- 불필요한 최적화보다 읽기 쉬운 코드를 우선합니다.
-- 새 언어 풀이를 추가할 때는 위 표의 파일 이름을 사용합니다.
-
-### 예시
-
-5번 문제의 Python 풀이는 다음 위치에 둡니다.
-
-```text
-src/5/Main.py
-```
-
 
 ## 기여자
 
