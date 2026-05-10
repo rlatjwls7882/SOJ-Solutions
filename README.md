@@ -19,7 +19,7 @@
 | [12](https://soj.services/problems/12) | C++ Map | Silver IV | [✅](./src/12/Main.cpp) | ❌ | ❌ | ❌ |
 | [13](https://soj.services/problems/13) | 세종대왕돈까스 | Gold I | [✅](./src/13/Main.cpp) | ❌ | ❌ | ❌ |
 | [14](https://soj.services/problems/14) | 거듭제곱인가? | Gold IV | [✅](./src/14/Main.cpp) | ❌ | ❌ | ❌ |
-| [15](https://soj.services/problems/15) | 코드포스합시다 | Bronze II | ❌ | [✅](./src/15/Main.java) | [✅](./src/15/Main.py) | ❌ |
+| [15](https://soj.services/problems/15) | 코드포스합시다 | Bronze II | [✅](./src/15/Main.cpp) | [✅](./src/15/Main.java) | [✅](./src/15/Main.py) | ❌ |
 | [16](https://soj.services/problems/16) | C++ Stack | Silver IV | [✅](./src/16/Main.cpp) | ❌ | ❌ | ❌ |
 | [17](https://soj.services/problems/17) | C++ Queue | Silver IV | [✅](./src/17/Main.cpp) | ❌ | ❌ | ❌ |
 
