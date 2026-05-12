@@ -22,7 +22,7 @@
 | [15](https://soj.services/problems/15) | 코드포스합시다 | Bronze II | ❌ | [✅](./src/15/Main.cpp) | [✅](./src/15/Main.java) | [✅](./src/15/Main.py) | ❌ |
 | [16](https://soj.services/problems/16) | C++ Stack | Silver IV | ❌ | [✅](./src/16/Main.cpp) | ❌ | ❌ | ❌ |
 | [17](https://soj.services/problems/17) | C++ Queue | Silver IV | ❌ | [✅](./src/17/Main.cpp) | ❌ | ❌ | ❌ |
-| [18](https://soj.services/problems/18) | 몫의 나머지 | Gold II | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [18](https://soj.services/problems/18) | 몫의 나머지 | Gold II | ❌ | [✅](./src/18/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
