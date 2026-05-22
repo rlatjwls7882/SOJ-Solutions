@@ -19,7 +19,7 @@ SOLUTION_ROOT = Path("src")
 SOJ_BASE_URL = os.getenv("SOJ_BASE_URL", "https://soj.services").rstrip("/")
 SOJ_API_BASE = os.getenv("SOJ_API_BASE", f"{SOJ_BASE_URL}/api").rstrip("/")
 
-OK_MARK = "✅"
+OK_MARK = "✔️"
 NO_MARK = "❌"
 
 REQUEST_TIMEOUT = 20
