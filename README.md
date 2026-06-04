@@ -30,6 +30,7 @@
 | [23](https://soj.services/problems/23) | 이분 탐색 | Silver IV | ❌ | [✔️](./src/23/Main.cpp) | ❌ | ❌ | ❌ |
 | [24](https://soj.services/problems/24) | 누적 합 | Silver III | ❌ | [✔️](./src/24/Main.cpp) | ❌ | ❌ | ❌ |
 | [25](https://soj.services/problems/25) | 두 포인터 | Silver III | ❌ | [✔️](./src/25/Main.cpp) | ❌ | ❌ | ❌ |
+| [26](https://soj.services/problems/26) | 백트래킹 | Silver III | ❌ | [✔️](./src/26/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
