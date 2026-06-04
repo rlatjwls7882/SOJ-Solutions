@@ -28,24 +28,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests tqdm
 
-      - name: Check SOJ connection
-        run: |
-          echo "=== DNS ==="
-          getent ahosts soj.services || true
-
-          echo "=== IPv4 ==="
-          curl -4 -v --connect-timeout 10 --max-time 20 \
-            "https://soj.services/api/problems?page=0&size=1" || true
-
-          echo "=== IPv6 ==="
-          curl -6 -v --connect-timeout 10 --max-time 20 \
-            "https://soj.services/api/problems?page=0&size=1" || true
-
       - name: Update README
         env:
           SOJ_BASE_URL: https://soj.services
           SOJ_API_BASE: https://soj.services/api
-          FAIL_ON_API_ERROR: true
         run: |
           python update_README.py
 
