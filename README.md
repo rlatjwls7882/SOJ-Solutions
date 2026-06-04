@@ -25,7 +25,11 @@
 | [18](https://soj.services/problems/18) | 몫의 나머지 | Gold II | ❌ | [✔️](./src/18/Main.cpp) | ❌ | ❌ | ❌ |
 | [19](https://soj.services/problems/19) | C++ Deque | Silver IV | ❌ | [✔️](./src/19/Main.cpp) | ❌ | ❌ | ❌ |
 | [20](https://soj.services/problems/20) | C++ Priority Queue | Silver II | ❌ | [✔️](./src/20/Main.cpp) | ❌ | ❌ | ❌ |
-| [21](https://soj.services/problems/21) | C++ DSU | Gold V | ❌ | [✔️](./src/21/Main.cpp) | ❌ | ❌ | ❌ |
+| [21](https://soj.services/problems/21) | 분리 집합 | Gold V | ❌ | [✔️](./src/21/Main.cpp) | ❌ | ❌ | ❌ |
+| [22](https://soj.services/problems/22) | Ordered Set | Platinum V | ❌ | [✔️](./src/22/Main.cpp) | ❌ | ❌ | ❌ |
+| [23](https://soj.services/problems/23) | 이분 탐색 | Silver IV | ❌ | [✔️](./src/23/Main.cpp) | ❌ | ❌ | ❌ |
+| [24](https://soj.services/problems/24) | 누적 합 | Silver III | ❌ | [✔️](./src/24/Main.cpp) | ❌ | ❌ | ❌ |
+| [25](https://soj.services/problems/25) | 두 포인터 | Silver III | ❌ | [✔️](./src/25/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
