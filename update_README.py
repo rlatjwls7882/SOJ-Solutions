@@ -1,5 +1,6 @@
 import os
 import re
+import sys
 import time
 from pathlib import Path
 from urllib.parse import quote
@@ -22,33 +23,72 @@ SOJ_API_BASE = os.getenv("SOJ_API_BASE", f"{SOJ_BASE_URL}/api").rstrip("/")
 OK_MARK = "✔️"
 NO_MARK = "❌"
 
-REQUEST_TIMEOUT = 20
+CONNECT_TIMEOUT = 10
+READ_TIMEOUT = 30
 REQUEST_RETRIES = 5
+REQUEST_BACKOFF_SECONDS = 2
 PAGE_SIZE = 500
+
+# README.md가 이미 있다면 SOJ 서버의 일시적인 장애 때문에 workflow 전체를
+# 실패시키지 않는다. 엄격하게 실패 처리하려면 환경 변수에 FAIL_ON_API_ERROR=true를 설정한다.
+FAIL_ON_API_ERROR = os.getenv("FAIL_ON_API_ERROR", "false").lower() in {
+    "1",
+    "true",
+    "yes",
+}
 
 CONTRIBUTORS = [
     "rlatjwls7882",
 ]
 
+SESSION = requests.Session()
+SESSION.headers.update({"User-Agent": "soj-solutions-readme-updater"})
+
+
+class SojApiError(RuntimeError):
+    pass
+
+
+class SojApiUnavailableError(SojApiError):
+    pass
+
+
 def request_json(path, params=None):
     url = f"{SOJ_API_BASE}{path}"
 
     last_error = None
-    for _ in range(REQUEST_RETRIES):
+    for attempt in range(1, REQUEST_RETRIES + 1):
         try:
-            response = requests.get(
+            response = SESSION.get(
                 url,
                 params=params,
-                timeout=REQUEST_TIMEOUT,
-                headers={"User-Agent": "soj-solutions-readme-updater"},
+                timeout=(CONNECT_TIMEOUT, READ_TIMEOUT),
             )
             response.raise_for_status()
             return response.json()
-        except Exception as error:
-            last_error = error
-            time.sleep(1.5)
+        except requests.HTTPError as error:
+            status = error.response.status_code if error.response is not None else None
 
-    raise RuntimeError(f"request failed: {url}") from last_error
+            # 잘못된 URL이나 권한 문제는 재시도해도 해결되지 않는다.
+            if status is not None and 400 <= status < 500 and status != 429:
+                raise SojApiError(f"SOJ API returned HTTP {status}: {url}") from error
+
+            last_error = error
+        except (requests.ConnectionError, requests.Timeout, ValueError) as error:
+            last_error = error
+
+        print(
+            f"[SOJ API] request failed ({attempt}/{REQUEST_RETRIES}): "
+            f"{type(last_error).__name__}: {last_error}",
+            file=sys.stderr,
+        )
+
+        if attempt < REQUEST_RETRIES:
+            delay = REQUEST_BACKOFF_SECONDS * attempt
+            print(f"[SOJ API] retrying in {delay}s...", file=sys.stderr)
+            time.sleep(delay)
+
+    raise SojApiUnavailableError(f"SOJ API is unavailable: {url}") from last_error
 
 
 def fetch_problems():
@@ -72,7 +112,7 @@ def fetch_languages():
     languages = extract_items(data, "languages")
 
     if not languages:
-        raise RuntimeError("SOJ language API returned empty language list")
+        raise SojApiError("SOJ language API returned empty language list")
 
     return [normalize_language(language) for language in languages]
 
@@ -99,6 +139,7 @@ def has_next_page(data, page):
         return page + 1 < int(data["totalPages"])
 
     return False
+
 
 def normalize_language(language):
     name = str(language.get("name", "")).strip()
@@ -191,6 +232,7 @@ def md_escape(value):
 def make_row(values):
     return "| " + " | ".join(values) + " |"
 
+
 def make_contributors_section():
     if not CONTRIBUTORS:
         return ""
@@ -215,6 +257,7 @@ def make_contributors_section():
 """ + "\n".join(rows) + """
 </table>
 """
+
 
 def get_header():
     return "\n".join([
@@ -264,8 +307,16 @@ def write_readme(problems, languages):
 
 
 def main():
-    problems = fetch_problems()
-    languages = visible_languages(fetch_languages())
+    try:
+        problems = fetch_problems()
+        languages = visible_languages(fetch_languages())
+    except SojApiUnavailableError as error:
+        if README_PATH.is_file() and not FAIL_ON_API_ERROR:
+            print(f"[SOJ API] {error}", file=sys.stderr)
+            print("[SOJ API] keeping the existing README.md unchanged.", file=sys.stderr)
+            return
+
+        raise
 
     write_readme(problems, languages)
 
