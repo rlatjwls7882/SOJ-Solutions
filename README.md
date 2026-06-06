@@ -32,6 +32,8 @@
 | [25](https://soj.services/problems/25) | 두 포인터 | Silver III | ❌ | [✔️](./src/25/Main.cpp) | ❌ | ❌ | ❌ |
 | [26](https://soj.services/problems/26) | 백트래킹 | Silver III | ❌ | [✔️](./src/26/Main.cpp) | ❌ | ❌ | ❌ |
 | [27](https://soj.services/problems/27) | DFS | Silver II | ❌ | [✔️](./src/27/Main.cpp) | ❌ | ❌ | ❌ |
+| [28](https://soj.services/problems/28) | BFS | Silver II | ❌ | [✔️](./src/28/Main.cpp) | ❌ | ❌ | ❌ |
+| [29](https://soj.services/problems/29) | 스위핑 | Gold V | ❌ | [✔️](./src/29/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
