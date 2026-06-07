@@ -35,6 +35,7 @@
 | [28](https://soj.services/problems/28) | BFS | Silver II | ❌ | [✔️](./src/28/Main.cpp) | ❌ | ❌ | ❌ |
 | [29](https://soj.services/problems/29) | 스위핑 | Gold V | ❌ | [✔️](./src/29/Main.cpp) | ❌ | ❌ | ❌ |
 | [30](https://soj.services/problems/30) | Imos Method | Gold V | ❌ | [✔️](./src/30/Main.cpp) | ❌ | ❌ | ❌ |
+| [31](https://soj.services/problems/31) | Imos Method 2 | Platinum IV | ❌ | [✔️](./src/31/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
