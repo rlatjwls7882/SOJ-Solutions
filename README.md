@@ -38,6 +38,7 @@
 | [31](https://soj.services/problems/31) | Imos Method 2 | Platinum IV | ❌ | [✔️](./src/31/Main.cpp) | ❌ | ❌ | ❌ |
 | [32](https://soj.services/problems/32) | 소수 판정 | Silver IV | ❌ | [✔️](./src/32/Main.cpp) | ❌ | ❌ | ❌ |
 | [33](https://soj.services/problems/33) | 에라토스테네스의 체 | Silver III | ❌ | [✔️](./src/33/Main.cpp) | ❌ | ❌ | ❌ |
+| [34](https://soj.services/problems/34) | GCD와 LCM | Bronze I | ❌ | [✔️](./src/34/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
