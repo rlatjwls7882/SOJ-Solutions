@@ -29,9 +29,9 @@ int main() {
         auto [cur, cost] = pq.top(); pq.pop();
         if(dist[cur]<=cost) continue;
         dist[cur]=cost;
-        for(auto [nxt, co]:conn[cur]) {
-            if(dist[nxt]>dist[cur]+co) {
-                pq.push({nxt, dist[cur]+co});
+        for(auto [nxt, w]:conn[cur]) {
+            if(dist[nxt]>cost+w) {
+                pq.push({nxt, cost+w});
             }
         }
     }
