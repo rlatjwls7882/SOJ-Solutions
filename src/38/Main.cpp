@@ -6,7 +6,7 @@ const ll LINF=0x3f3f3f3f3f3f3f3f;
 
 struct element {
     ll u, w;
-    bool operator<(const element e) const {
+    bool operator<(const element& e) const {
         return w > e.w;
     }
 };
