@@ -42,6 +42,7 @@
 | [35](https://soj.services/problems/35) | 거듭제곱 1 | Bronze III | ❌ | [✔️](./src/35/Main.cpp) | ❌ | ❌ | ❌ |
 | [36](https://soj.services/problems/36) | 거듭제곱 2 | Silver I | ❌ | [✔️](./src/36/Main.cpp) | ❌ | ❌ | ❌ |
 | [37](https://soj.services/problems/37) | Modular Multiplicative Inverse | Gold III | ❌ | [✔️](./src/37/Main.cpp) | ❌ | ❌ | ❌ |
+| [38](https://soj.services/problems/38) | 다익스트라 | Gold IV | ❌ | [✔️](./src/38/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
