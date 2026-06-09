@@ -39,6 +39,7 @@
 | [32](https://soj.services/problems/32) | 소수 판정 | Silver IV | ❌ | [✔️](./src/32/Main.cpp) | ❌ | ❌ | ❌ |
 | [33](https://soj.services/problems/33) | 에라토스테네스의 체 | Silver III | ❌ | [✔️](./src/33/Main.cpp) | ❌ | ❌ | ❌ |
 | [34](https://soj.services/problems/34) | GCD와 LCM | Bronze I | ❌ | [✔️](./src/34/Main.cpp) | ❌ | ❌ | ❌ |
+| [35](https://soj.services/problems/35) | 거듭제곱 1 | Bronze III | ❌ | [✔️](./src/35/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
