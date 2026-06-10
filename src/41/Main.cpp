@@ -13,21 +13,16 @@ int main() {
         inD[v]++;
     }
 
-    vector<int> res;
     queue<int> q;
     for(int i=1;i<=n;i++) {
-        if(!inD[i]) {
-            q.push(i);
-            res.push_back(i);
-        }
+        if(!inD[i]) q.push(i);
     }
+    vector<int> res;
     while(!q.empty()) {
         int cur=q.front(); q.pop();
+        res.push_back(cur);
         for(int next:conn[cur]) {
-            if(--inD[next]==0) {
-                res.push_back(next);
-                q.push(next);
-            }
+            if(--inD[next]==0) q.push(next);
         }
     }
     if(res.size()!=n) cout << "CYCLE";
