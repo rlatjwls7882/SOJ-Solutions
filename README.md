@@ -45,6 +45,7 @@
 | [38](https://soj.services/problems/38) | 다익스트라 | Gold IV | ❌ | [✔️](./src/38/Main.cpp) | ❌ | ❌ | ❌ |
 | [39](https://soj.services/problems/39) | 벨만-포드 | Gold IV | ❌ | [✔️](./src/39/Main.cpp) | ❌ | ❌ | ❌ |
 | [40](https://soj.services/problems/40) | 플로이드-워셜 | Gold IV | ❌ | [✔️](./src/40/Main.cpp) | ❌ | ❌ | ❌ |
+| [41](https://soj.services/problems/41) | 위상 정렬 | Gold III | ❌ | [✔️](./src/41/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
