@@ -7,7 +7,7 @@ vector<vector<int>> conn(1001);
 bool dfs(int cur) {
     vis[cur]=true;
     for(int next:conn[cur]) {
-        if(b[next]==-1 || !vis[b[next]] && dfs(b[next])) {
+        if(!b[next] || !vis[b[next]] && dfs(b[next])) {
             a[cur]=next;
             b[next]=cur;
             return true;
@@ -25,7 +25,6 @@ int main() {
     }
 
     int cnt=0;
-    memset(b, -1, sizeof b);
     for(int i=1;i<=n;i++) {
         memset(vis, 0, sizeof vis);
         cnt+=dfs(i);
