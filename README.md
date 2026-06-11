@@ -47,8 +47,10 @@
 | [40](https://soj.services/problems/40) | 플로이드-워셜 | Gold IV | ❌ | [✔️](./src/40/Main.cpp) | ❌ | ❌ | ❌ |
 | [41](https://soj.services/problems/41) | 위상 정렬 | Gold III | ❌ | [✔️](./src/41/Main.cpp) | ❌ | ❌ | ❌ |
 | [42](https://soj.services/problems/42) | 최소 스패닝 트리 | Gold IV | ❌ | [✔️](./src/42/Main.cpp) | ❌ | ❌ | ❌ |
-| [43](https://soj.services/problems/43) | 이분 매칭 1 | Platinum IV | ❌ | [✔️](./src/43/Main.cpp) | ❌ | ❌ | ❌ |
+| [43](https://soj.services/problems/43) | 이분 매칭 | Platinum IV | ❌ | [✔️](./src/43/Main.cpp) | ❌ | ❌ | ❌ |
 | [44](https://soj.services/problems/44) | 애드몬드-카프 | Platinum IV | ❌ | [✔️](./src/44/Main.cpp) | ❌ | ❌ | ❌ |
+| [45](https://soj.services/problems/45) | MCMF | Platinum III | ❌ | [✔️](./src/45/Main.cpp) | ❌ | ❌ | ❌ |
+| [46](https://soj.services/problems/46) | 디닉 | Platinum II | ❌ | [✔️](./src/46/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
