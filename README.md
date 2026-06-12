@@ -41,16 +41,18 @@
 | [34](https://soj.services/problems/34) | GCD와 LCM | Bronze I | ❌ | [✔️](./src/34/Main.cpp) | ❌ | ❌ | ❌ |
 | [35](https://soj.services/problems/35) | 거듭제곱 1 | Bronze III | ❌ | [✔️](./src/35/Main.cpp) | ❌ | ❌ | ❌ |
 | [36](https://soj.services/problems/36) | 거듭제곱 2 | Silver I | ❌ | [✔️](./src/36/Main.cpp) | ❌ | ❌ | ❌ |
-| [37](https://soj.services/problems/37) | Modular Multiplicative Inverse | Gold III | ❌ | [✔️](./src/37/Main.cpp) | ❌ | ❌ | ❌ |
+| [37](https://soj.services/problems/37) | 모듈로 곱셈의 역원 | Gold III | ❌ | [✔️](./src/37/Main.cpp) | ❌ | ❌ | ❌ |
 | [38](https://soj.services/problems/38) | 다익스트라 | Gold IV | ❌ | [✔️](./src/38/Main.cpp) | ❌ | ❌ | ❌ |
 | [39](https://soj.services/problems/39) | 벨만-포드 | Gold IV | ❌ | [✔️](./src/39/Main.cpp) | ❌ | ❌ | ❌ |
 | [40](https://soj.services/problems/40) | 플로이드-워셜 | Gold IV | ❌ | [✔️](./src/40/Main.cpp) | ❌ | ❌ | ❌ |
 | [41](https://soj.services/problems/41) | 위상 정렬 | Gold III | ❌ | [✔️](./src/41/Main.cpp) | ❌ | ❌ | ❌ |
 | [42](https://soj.services/problems/42) | 최소 스패닝 트리 | Gold IV | ❌ | [✔️](./src/42/Main.cpp) | ❌ | ❌ | ❌ |
-| [43](https://soj.services/problems/43) | 이분 매칭 | Platinum IV | ❌ | [✔️](./src/43/Main.cpp) | ❌ | ❌ | ❌ |
+| [43](https://soj.services/problems/43) | 이분 매칭 1 | Platinum IV | ❌ | [✔️](./src/43/Main.cpp) | ❌ | ❌ | ❌ |
 | [44](https://soj.services/problems/44) | 애드몬드-카프 | Platinum IV | ❌ | [✔️](./src/44/Main.cpp) | ❌ | ❌ | ❌ |
 | [45](https://soj.services/problems/45) | MCMF | Platinum III | ❌ | [✔️](./src/45/Main.cpp) | ❌ | ❌ | ❌ |
 | [46](https://soj.services/problems/46) | 디닉 | Platinum II | ❌ | [✔️](./src/46/Main.cpp) | ❌ | ❌ | ❌ |
+| [47](https://soj.services/problems/47) | 이분 매칭 2 | Platinum III | ❌ | [✔️](./src/47/Main.cpp) | ❌ | ❌ | ❌ |
+| [48](https://soj.services/problems/48) | 강한 연결 요소 | Platinum V | ❌ | [✔️](./src/48/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
