@@ -53,6 +53,7 @@
 | [46](https://soj.services/problems/46) | 디닉 | Platinum II | ❌ | [✔️](./src/46/Main.cpp) | ❌ | ❌ | ❌ |
 | [47](https://soj.services/problems/47) | 이분 매칭 2 | Platinum III | ❌ | [✔️](./src/47/Main.cpp) | ❌ | ❌ | ❌ |
 | [48](https://soj.services/problems/48) | 강한 연결 요소 | Platinum V | ❌ | [✔️](./src/48/Main.cpp) | ❌ | ❌ | ❌ |
+| [49](https://soj.services/problems/49) | 2-SAT | Platinum IV | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 
 ## 기여자
