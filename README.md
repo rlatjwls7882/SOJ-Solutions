@@ -55,6 +55,7 @@
 | [48](https://soj.services/problems/48) | 강한 연결 요소 | Platinum V | ❌ | [✔️](./src/48/Main.cpp) | ❌ | ❌ | ❌ |
 | [49](https://soj.services/problems/49) | 2-SAT | Platinum IV | ❌ | [✔️](./src/49/Main.cpp) | ❌ | ❌ | ❌ |
 | [50](https://soj.services/problems/50) | KMP | Platinum V | ❌ | [✔️](./src/50/Main.cpp) | ❌ | ❌ | ❌ |
+| [51](https://soj.services/problems/51) | 라빈-카프 | Platinum V | ❌ | [✔️](./src/51/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
