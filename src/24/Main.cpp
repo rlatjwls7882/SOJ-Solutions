@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-long long preSum[100'000];
+long long preSum[100'001];
 
 int main() {
     cin.tie(0)->sync_with_stdio(0);
