@@ -59,6 +59,7 @@
 | [52](https://soj.services/problems/52) | TSP | Gold I | ❌ | [✔️](./src/52/Main.cpp) | ❌ | ❌ | ❌ |
 | [53](https://soj.services/problems/53) | 트라이 | Platinum IV | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [54](https://soj.services/problems/54) | 세그먼트 트리 | Gold I | ❌ | [✔️](./src/54/Main.cpp) | ❌ | ❌ | ❌ |
+| [55](https://soj.services/problems/55) | 펜윅 트리 | Gold I | ❌ | [✔️](./src/55/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
