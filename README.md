@@ -60,6 +60,7 @@
 | [53](https://soj.services/problems/53) | 트라이 | Platinum IV | ❌ | [✔️](./src/53/Main.cpp) | ❌ | ❌ | ❌ |
 | [54](https://soj.services/problems/54) | 세그먼트 트리 | Gold I | ❌ | [✔️](./src/54/Main.cpp) | ❌ | ❌ | ❌ |
 | [55](https://soj.services/problems/55) | 펜윅 트리 | Gold I | ❌ | [✔️](./src/55/Main.cpp) | ❌ | ❌ | ❌ |
+| [56](https://soj.services/problems/56) | Walking on Segment Tree | Platinum V | ❌ | [✔️](./src/56/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
