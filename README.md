@@ -62,6 +62,7 @@
 | [55](https://soj.services/problems/55) | 펜윅 트리 | Gold I | ❌ | [✔️](./src/55/Main.cpp) | ❌ | ❌ | ❌ |
 | [56](https://soj.services/problems/56) | Walking on Segment Tree | Platinum V | ❌ | [✔️](./src/56/Main.cpp) | ❌ | ❌ | ❌ |
 | [57](https://soj.services/problems/57) | CCW | Gold V | ❌ | [✔️](./src/57/Main.cpp) | ❌ | ❌ | ❌ |
+| [58](https://soj.services/problems/58) | 선분 교차 판정 | Gold II | ❌ | [✔️](./src/58/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
