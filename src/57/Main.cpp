@@ -5,7 +5,6 @@ typedef long long ll;
 
 struct point {
     ll x, y;
-    friend istream& operator>>(istream& in, point& p) { return in >> p.x >> p.y; }
 };
 
 ll ccw(point a, point b, point c) {
@@ -19,7 +18,7 @@ int main() {
     cin.tie(0)->sync_with_stdio(0);
     int q; cin >> q;
     while(q--) {
-        point a, b, c; cin >> a >> b >> c;
+        point a, b, c; cin >> a.x >> a.y >> b.x >> b.y >> c.x >> c.y;
         cout << ccw(a, b, c) << '\n';
     }
 }
