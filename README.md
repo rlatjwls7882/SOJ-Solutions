@@ -63,6 +63,7 @@
 | [56](https://soj.services/problems/56) | Walking on Segment Tree | Platinum V | ❌ | [✔️](./src/56/Main.cpp) | ❌ | ❌ | ❌ |
 | [57](https://soj.services/problems/57) | CCW | Gold V | ❌ | [✔️](./src/57/Main.cpp) | ❌ | ❌ | ❌ |
 | [58](https://soj.services/problems/58) | 선분 교차 판정 | Gold II | ❌ | [✔️](./src/58/Main.cpp) | ❌ | ❌ | ❌ |
+| [59](https://soj.services/problems/59) | 활성 구간 | Gold IV | ❌ | [✔️](./src/59/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
