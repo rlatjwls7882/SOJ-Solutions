@@ -60,12 +60,12 @@
 | [53](https://soj.services/problems/53) | 트라이 | Platinum IV | ❌ | [✔️](./src/53/Main.cpp) | ❌ | ❌ | ❌ |
 | [54](https://soj.services/problems/54) | 세그먼트 트리 | Gold I | ❌ | [✔️](./src/54/Main.cpp) | ❌ | ❌ | ❌ |
 | [55](https://soj.services/problems/55) | 펜윅 트리 | Gold I | ❌ | [✔️](./src/55/Main.cpp) | ❌ | ❌ | ❌ |
-| [56](https://soj.services/problems/56) | Walking on Segment Tree | Platinum V | ❌ | [✔️](./src/56/Main.cpp) | ❌ | ❌ | ❌ |
+| [56](https://soj.services/problems/56) | 세그 워크 | Platinum V | ❌ | [✔️](./src/56/Main.cpp) | ❌ | ❌ | ❌ |
 | [57](https://soj.services/problems/57) | CCW | Gold V | ❌ | [✔️](./src/57/Main.cpp) | ❌ | ❌ | ❌ |
 | [58](https://soj.services/problems/58) | 선분 교차 판정 | Gold II | ❌ | [✔️](./src/58/Main.cpp) | ❌ | ❌ | ❌ |
 | [59](https://soj.services/problems/59) | 활성 구간 | Gold IV | ❌ | [✔️](./src/59/Main.cpp) | ❌ | ❌ | ❌ |
 | [60](https://soj.services/problems/60) | 문자열 편집기 | Platinum I | ❌ | [✔️](./src/60/Main.cpp) | ❌ | ❌ | ❌ |
-| [61](https://soj.services/problems/61) | 금지된 문자열 | Platinum II | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [61](https://soj.services/problems/61) | 금지된 문자열 | Platinum II | ❌ | [✔️](./src/61/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
