@@ -67,6 +67,7 @@
 | [60](https://soj.services/problems/60) | 문자열 편집기 | Platinum I | ❌ | [✔️](./src/60/Main.cpp) | ❌ | ❌ | ❌ |
 | [61](https://soj.services/problems/61) | 금지된 문자열 | Platinum II | ❌ | [✔️](./src/61/Main.cpp) | ❌ | ❌ | ❌ |
 | [62](https://soj.services/problems/62) | 구간 더하기와 최댓값 | Platinum IV | ❌ | [✔️](./src/62/Main.cpp) | ❌ | ❌ | ❌ |
+| [63](https://soj.services/problems/63) | 구간 안의 작은 수 | Platinum III | ❌ | [✔️](./src/63/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
