@@ -70,6 +70,7 @@
 | [63](https://soj.services/problems/63) | 구간 안의 작은 수 | Platinum III | ❌ | [✔️](./src/63/Main.cpp) | ❌ | ❌ | ❌ |
 | [64](https://soj.services/problems/64) | 희소한 수열 | Platinum I | ❌ | [✔️](./src/64/Main.cpp) | ❌ | ❌ | ❌ |
 | [65](https://soj.services/problems/65) | 트리 경로 최댓값 | Platinum I | ❌ | [✔️](./src/65/Main.cpp) | ❌ | ❌ | ❌ |
+| [66](https://soj.services/problems/66) | 볼록 껍질 | Platinum V | ❌ | [✔️](./src/66/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
