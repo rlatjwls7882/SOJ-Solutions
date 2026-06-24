@@ -60,11 +60,13 @@ void update(int i, int val) {
     }
 }
 
-int maxRange(int L, int R, int nodeNum=1, int nodeL=0, int nodeR=SZ-1) {
-    if(R<nodeL || nodeR<L) return INT_MIN;
-    if(L<=nodeL && nodeR<=R) return arr[nodeNum];
-    int mid = nodeL+nodeR>>1;
-    return max(maxRange(L, R, nodeNum*2, nodeL, mid), maxRange(L, R, nodeNum*2+1, mid+1, nodeR));
+int maxRange(int L, int R) {
+    int ret=INT_MIN;
+    for(L+=SZ, R+=SZ;L<=R;L>>=1, R>>=1) {
+        if(L&1) ret=max(ret, arr[L++]);
+        if(!(R&1)) ret=max(ret, arr[R--]);
+    }
+    return ret;
 }
 
 int query(int u, int v) {
