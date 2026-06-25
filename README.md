@@ -71,6 +71,7 @@
 | [64](https://soj.services/problems/64) | 희소한 수열 | Platinum I | ❌ | [✔️](./src/64/Main.cpp) | ❌ | ❌ | ❌ |
 | [65](https://soj.services/problems/65) | 트리 경로 최댓값 | Platinum I | ❌ | [✔️](./src/65/Main.cpp) | ❌ | ❌ | ❌ |
 | [66](https://soj.services/problems/66) | 볼록 껍질 | Platinum V | ❌ | [✔️](./src/66/Main.cpp) | ❌ | ❌ | ❌ |
+| [67](https://soj.services/problems/67) | 볼록 다각형 내부의 점 판정 | Platinum III | ❌ | [✔️](./src/67/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
