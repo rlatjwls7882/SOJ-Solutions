@@ -74,6 +74,7 @@
 | [67](https://soj.services/problems/67) | 볼록 다각형 내부의 점 판정 | Platinum III | ❌ | [✔️](./src/67/Main.cpp) | ❌ | ❌ | ❌ |
 | [68](https://soj.services/problems/68) | 가장 먼 두 점 | Platinum III | ❌ | [✔️](./src/68/Main.cpp) | ❌ | ❌ | ❌ |
 | [69](https://soj.services/problems/69) | 제한된 점프 | Platinum V | ❌ | [✔️](./src/69/Main.cpp) | ❌ | ❌ | ❌ |
+| [70](https://soj.services/problems/70) | 첫 번째 큰 수 | Platinum II | ❌ | [✔️](./src/70/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
