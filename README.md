@@ -76,6 +76,7 @@
 | [69](https://soj.services/problems/69) | 제한된 점프 | Platinum V | ❌ | [✔️](./src/69/Main.cpp) | ❌ | ❌ | ❌ |
 | [70](https://soj.services/problems/70) | 첫 번째 큰 수 | Platinum II | ❌ | [✔️](./src/70/Main.cpp) | ❌ | ❌ | ❌ |
 | [71](https://soj.services/problems/71) | 같은 수 쌍 | Platinum II | ❌ | [✔️](./src/71/Main.cpp) | ❌ | ❌ | ❌ |
+| [72](https://soj.services/problems/72) | 목표 달성 시점 | Platinum I | ❌ | [✔️](./src/72/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
