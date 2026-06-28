@@ -75,6 +75,7 @@
 | [68](https://soj.services/problems/68) | 가장 먼 두 점 | Platinum III | ❌ | [✔️](./src/68/Main.cpp) | ❌ | ❌ | ❌ |
 | [69](https://soj.services/problems/69) | 제한된 점프 | Platinum V | ❌ | [✔️](./src/69/Main.cpp) | ❌ | ❌ | ❌ |
 | [70](https://soj.services/problems/70) | 첫 번째 큰 수 | Platinum II | ❌ | [✔️](./src/70/Main.cpp) | ❌ | ❌ | ❌ |
+| [71](https://soj.services/problems/71) | 같은 수 쌍 | Platinum II | ❌ | [✔️](./src/71/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
