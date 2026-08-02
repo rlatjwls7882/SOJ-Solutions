@@ -1,4 +1,4 @@
-# SOJ Solution
+# SOJ Solutions
 
 [Seojin Online Judge](https://soj.services)의 공식 풀이 저장소입니다.
 ## 풀이 목록
