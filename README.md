@@ -25,43 +25,43 @@
 | [18](https://soj.services/problems/18) | 몫의 나머지 | Gold II | ❌ | [✔️](./src/18/Main.cpp) | ❌ | ❌ | ❌ |
 | [19](https://soj.services/problems/19) | C++ Deque | Silver IV | ❌ | [✔️](./src/19/Main.cpp) | ❌ | ❌ | ❌ |
 | [20](https://soj.services/problems/20) | C++ Priority Queue | Silver II | ❌ | [✔️](./src/20/Main.cpp) | ❌ | ❌ | ❌ |
-| [21](https://soj.services/problems/21) | 분리 집합 | Gold V | ❌ | [✔️](./src/21/Main.cpp) | ❌ | ❌ | ❌ |
+| [21](https://soj.services/problems/21) | 집합 합치기 | Gold V | ❌ | [✔️](./src/21/Main.cpp) | ❌ | ❌ | ❌ |
 | [22](https://soj.services/problems/22) | Ordered Set | Platinum V | ❌ | [✔️](./src/22/Main.cpp) | ❌ | ❌ | ❌ |
-| [23](https://soj.services/problems/23) | 이분 탐색 | Silver IV | ❌ | [✔️](./src/23/Main.cpp) | ❌ | ❌ | ❌ |
-| [24](https://soj.services/problems/24) | 누적 합 | Silver III | ❌ | [✔️](./src/24/Main.cpp) | ❌ | ❌ | ❌ |
-| [25](https://soj.services/problems/25) | 두 포인터 | Silver III | ❌ | [✔️](./src/25/Main.cpp) | ❌ | ❌ | ❌ |
-| [26](https://soj.services/problems/26) | 백트래킹 | Silver III | ❌ | [✔️](./src/26/Main.cpp) | ❌ | ❌ | ❌ |
+| [23](https://soj.services/problems/23) | 위치 찾기 | Silver IV | ❌ | [✔️](./src/23/Main.cpp) | ❌ | ❌ | ❌ |
+| [24](https://soj.services/problems/24) | 구간 합 | Silver III | ❌ | [✔️](./src/24/Main.cpp) | ❌ | ❌ | ❌ |
+| [25](https://soj.services/problems/25) | 순서 쌍 찾기 | Silver III | ❌ | [✔️](./src/25/Main.cpp) | ❌ | ❌ | ❌ |
+| [26](https://soj.services/problems/26) | 순열 출력하기 | Silver III | ❌ | [✔️](./src/26/Main.cpp) | ❌ | ❌ | ❌ |
 | [27](https://soj.services/problems/27) | DFS | Silver II | ❌ | [✔️](./src/27/Main.cpp) | ❌ | ❌ | ❌ |
 | [28](https://soj.services/problems/28) | BFS | Silver II | ❌ | [✔️](./src/28/Main.cpp) | ❌ | ❌ | ❌ |
-| [29](https://soj.services/problems/29) | 스위핑 | Gold V | ❌ | [✔️](./src/29/Main.cpp) | ❌ | ❌ | ❌ |
-| [30](https://soj.services/problems/30) | Imos Method | Gold V | ❌ | [✔️](./src/30/Main.cpp) | ❌ | ❌ | ❌ |
-| [31](https://soj.services/problems/31) | Imos Method 2 | Platinum IV | ❌ | [✔️](./src/31/Main.cpp) | ❌ | ❌ | ❌ |
+| [29](https://soj.services/problems/29) | 전체 선분 길이 | Gold V | ❌ | [✔️](./src/29/Main.cpp) | ❌ | ❌ | ❌ |
+| [30](https://soj.services/problems/30) | 사각형 칠하기 | Gold V | ❌ | [✔️](./src/30/Main.cpp) | ❌ | ❌ | ❌ |
+| [31](https://soj.services/problems/31) | 삼각형 칠하기 | Platinum IV | ❌ | [✔️](./src/31/Main.cpp) | ❌ | ❌ | ❌ |
 | [32](https://soj.services/problems/32) | 소수 판정 | Silver IV | ❌ | [✔️](./src/32/Main.cpp) | ❌ | ❌ | ❌ |
-| [33](https://soj.services/problems/33) | 에라토스테네스의 체 | Silver III | ❌ | [✔️](./src/33/Main.cpp) | ❌ | ❌ | ❌ |
-| [34](https://soj.services/problems/34) | GCD와 LCM | Bronze I | ❌ | [✔️](./src/34/Main.cpp) | ❌ | ❌ | ❌ |
+| [33](https://soj.services/problems/33) | 소수 판정 2 | Silver III | ❌ | [✔️](./src/33/Main.cpp) | ❌ | ❌ | ❌ |
+| [34](https://soj.services/problems/34) | 최대공약수와 최소공배수 | Bronze I | ❌ | [✔️](./src/34/Main.cpp) | ❌ | ❌ | ❌ |
 | [35](https://soj.services/problems/35) | 거듭제곱 1 | Bronze III | ❌ | [✔️](./src/35/Main.cpp) | ❌ | ❌ | ❌ |
 | [36](https://soj.services/problems/36) | 거듭제곱 2 | Silver I | ❌ | [✔️](./src/36/Main.cpp) | ❌ | ❌ | ❌ |
 | [37](https://soj.services/problems/37) | 모듈로 곱셈의 역원 | Gold III | ❌ | [✔️](./src/37/Main.cpp) | ❌ | ❌ | ❌ |
 | [38](https://soj.services/problems/38) | 다익스트라 | Gold IV | ❌ | [✔️](./src/38/Main.cpp) | ❌ | ❌ | ❌ |
 | [39](https://soj.services/problems/39) | 벨만-포드 | Gold IV | ❌ | [✔️](./src/39/Main.cpp) | ❌ | ❌ | ❌ |
 | [40](https://soj.services/problems/40) | 플로이드-워셜 | Gold IV | ❌ | [✔️](./src/40/Main.cpp) | ❌ | ❌ | ❌ |
-| [41](https://soj.services/problems/41) | 위상 정렬 | Gold III | ❌ | [✔️](./src/41/Main.cpp) | ❌ | ❌ | ❌ |
+| [41](https://soj.services/problems/41) | 위상 정렬 순서 | Gold III | ❌ | [✔️](./src/41/Main.cpp) | ❌ | ❌ | ❌ |
 | [42](https://soj.services/problems/42) | 최소 스패닝 트리 | Gold IV | ❌ | [✔️](./src/42/Main.cpp) | ❌ | ❌ | ❌ |
 | [43](https://soj.services/problems/43) | 이분 매칭 1 | Platinum IV | ❌ | [✔️](./src/43/Main.cpp) | ❌ | ❌ | ❌ |
-| [44](https://soj.services/problems/44) | 애드몬드-카프 | Platinum IV | ❌ | [✔️](./src/44/Main.cpp) | ❌ | ❌ | ❌ |
-| [45](https://soj.services/problems/45) | MCMF | Platinum III | ❌ | [✔️](./src/45/Main.cpp) | ❌ | ❌ | ❌ |
-| [46](https://soj.services/problems/46) | 디닉 | Platinum II | ❌ | [✔️](./src/46/Main.cpp) | ❌ | ❌ | ❌ |
+| [44](https://soj.services/problems/44) | 유량 흘리기 1 | Platinum IV | ❌ | [✔️](./src/44/Main.cpp) | ❌ | ❌ | ❌ |
+| [45](https://soj.services/problems/45) | 유량 흘리기 3 | Platinum III | ❌ | [✔️](./src/45/Main.cpp) | ❌ | ❌ | ❌ |
+| [46](https://soj.services/problems/46) | 유량 흘리기 2 | Platinum II | ❌ | [✔️](./src/46/Main.cpp) | ❌ | ❌ | ❌ |
 | [47](https://soj.services/problems/47) | 이분 매칭 2 | Platinum III | ❌ | [✔️](./src/47/Main.cpp) | ❌ | ❌ | ❌ |
 | [48](https://soj.services/problems/48) | 강한 연결 요소 | Platinum V | ❌ | [✔️](./src/48/Main.cpp) | ❌ | ❌ | ❌ |
 | [49](https://soj.services/problems/49) | 2-SAT | Platinum IV | ❌ | [✔️](./src/49/Main.cpp) | ❌ | ❌ | ❌ |
-| [50](https://soj.services/problems/50) | KMP | Platinum V | ❌ | [✔️](./src/50/Main.cpp) | ❌ | ❌ | ❌ |
-| [51](https://soj.services/problems/51) | 라빈-카프 | Platinum V | ❌ | [✔️](./src/51/Main.cpp) | ❌ | ❌ | ❌ |
-| [52](https://soj.services/problems/52) | TSP | Gold I | ❌ | [✔️](./src/52/Main.cpp) | ❌ | ❌ | ❌ |
-| [53](https://soj.services/problems/53) | 트라이 | Platinum IV | ❌ | [✔️](./src/53/Main.cpp) | ❌ | ❌ | ❌ |
-| [54](https://soj.services/problems/54) | 세그먼트 트리 | Gold I | ❌ | [✔️](./src/54/Main.cpp) | ❌ | ❌ | ❌ |
-| [55](https://soj.services/problems/55) | 펜윅 트리 | Gold I | ❌ | [✔️](./src/55/Main.cpp) | ❌ | ❌ | ❌ |
-| [56](https://soj.services/problems/56) | 세그 워크 | Platinum V | ❌ | [✔️](./src/56/Main.cpp) | ❌ | ❌ | ❌ |
-| [57](https://soj.services/problems/57) | CCW | Gold V | ❌ | [✔️](./src/57/Main.cpp) | ❌ | ❌ | ❌ |
+| [50](https://soj.services/problems/50) | 패턴 찾기 | Platinum V | ❌ | [✔️](./src/50/Main.cpp) | ❌ | ❌ | ❌ |
+| [51](https://soj.services/problems/51) | 문자열 찾기 | Platinum V | ❌ | [✔️](./src/51/Main.cpp) | ❌ | ❌ | ❌ |
+| [52](https://soj.services/problems/52) | 외판원 순회 문제 | Gold I | ❌ | [✔️](./src/52/Main.cpp) | ❌ | ❌ | ❌ |
+| [53](https://soj.services/problems/53) | 접두사 사전 | Platinum IV | ❌ | [✔️](./src/53/Main.cpp) | ❌ | ❌ | ❌ |
+| [54](https://soj.services/problems/54) | 구간 합과 쿼리 | Gold I | ❌ | [✔️](./src/54/Main.cpp) | ❌ | ❌ | ❌ |
+| [55](https://soj.services/problems/55) | 구간 합과 쿼리 2 | Gold I | ❌ | [✔️](./src/55/Main.cpp) | ❌ | ❌ | ❌ |
+| [56](https://soj.services/problems/56) | k번째 공 찾기 | Platinum V | ❌ | [✔️](./src/56/Main.cpp) | ❌ | ❌ | ❌ |
+| [57](https://soj.services/problems/57) | 세 점의 방향 | Gold V | ❌ | [✔️](./src/57/Main.cpp) | ❌ | ❌ | ❌ |
 | [58](https://soj.services/problems/58) | 선분 교차 판정 | Gold II | ❌ | [✔️](./src/58/Main.cpp) | ❌ | ❌ | ❌ |
 | [59](https://soj.services/problems/59) | 활성 구간 | Gold IV | ❌ | [✔️](./src/59/Main.cpp) | ❌ | ❌ | ❌ |
 | [60](https://soj.services/problems/60) | 문자열 편집기 | Platinum I | ❌ | [✔️](./src/60/Main.cpp) | ❌ | ❌ | ❌ |
@@ -77,6 +77,7 @@
 | [70](https://soj.services/problems/70) | 첫 번째 큰 수 | Platinum II | ❌ | [✔️](./src/70/Main.cpp) | ❌ | ❌ | ❌ |
 | [71](https://soj.services/problems/71) | 같은 수 쌍 | Platinum II | ❌ | [✔️](./src/71/Main.cpp) | ❌ | ❌ | ❌ |
 | [72](https://soj.services/problems/72) | 목표 달성 시점 | Platinum I | ❌ | [✔️](./src/72/Main.cpp) | ❌ | ❌ | ❌ |
+| [73](https://soj.services/problems/73) | 직선의 최솟값 | Platinum II | ❌ | [✔️](./src/73/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
