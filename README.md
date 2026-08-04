@@ -78,6 +78,7 @@
 | [71](https://soj.services/problems/71) | 같은 수 쌍 | Platinum II | ❌ | [✔️](./src/71/Main.cpp) | ❌ | ❌ | ❌ |
 | [72](https://soj.services/problems/72) | 목표 달성 시점 | Platinum I | ❌ | [✔️](./src/72/Main.cpp) | ❌ | ❌ | ❌ |
 | [73](https://soj.services/problems/73) | 직선의 최솟값 | Platinum II | ❌ | [✔️](./src/73/Main.cpp) | ❌ | ❌ | ❌ |
+| [74](https://soj.services/problems/74) | 트랜스포머 나이트 | Silver II | ❌ | [✔️](./src/74/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
