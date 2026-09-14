@@ -79,6 +79,7 @@
 | [72](https://soj.services/problems/72) | 목표 달성 시점 | Platinum I | ❌ | [✔️](./src/72/Main.cpp) | ❌ | ❌ | ❌ |
 | [73](https://soj.services/problems/73) | 직선의 최솟값 | Platinum II | ❌ | [✔️](./src/73/Main.cpp) | ❌ | ❌ | ❌ |
 | [74](https://soj.services/problems/74) | 트랜스포머 나이트 | Silver II | ❌ | [✔️](./src/74/Main.cpp) | ❌ | ❌ | ❌ |
+| [75](https://soj.services/problems/75) | 문자열 단어 단위로 분리하기 | Bronze III | ❌ | [✔️](./src/75/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
