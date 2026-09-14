@@ -82,6 +82,7 @@
 | [75](https://soj.services/problems/75) | 문자열 단어 단위로 분리하기 | Bronze III | ❌ | [✔️](./src/75/Main.cpp) | ❌ | ❌ | ❌ |
 | [76](https://soj.services/problems/76) | 문자열 회전시키기 | Bronze IV | ❌ | [✔️](./src/76/Main.cpp) | ❌ | ❌ | ❌ |
 | [77](https://soj.services/problems/77) | 문자열 비교하기 | Unranked | ❌ | [✔️](./src/77/Main.cpp) | ❌ | ❌ | ❌ |
+| [78](https://soj.services/problems/78) | 문자열 삽입하기 | Unranked | ❌ | [✔️](./src/78/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
