@@ -84,6 +84,9 @@
 | [77](https://soj.services/problems/77) | 문자열 비교하기 | Unranked | ❌ | [✔️](./src/77/Main.cpp) | ❌ | ❌ | ❌ |
 | [78](https://soj.services/problems/78) | 문자열 삽입하기 | Unranked | ❌ | [✔️](./src/78/Main.cpp) | ❌ | ❌ | ❌ |
 | [79](https://soj.services/problems/79) | 종이의 집 | Bronze IV | ❌ | [✔️](./src/79/Main.cpp) | ❌ | ❌ | ❌ |
+| [80](https://soj.services/problems/80) | 매우 잘 알려진 사실 | Platinum V | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [81](https://soj.services/problems/81) | 가장 많이 나온 수 | Bronze IV | ❌ | [✔️](./src/81/Main.cpp) | ❌ | ❌ | ❌ |
+| [82](https://soj.services/problems/82) | 단어 정렬 | Unranked | ❌ | [✔️](./src/82/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
