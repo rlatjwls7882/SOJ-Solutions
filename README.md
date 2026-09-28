@@ -88,6 +88,7 @@
 | [81](https://soj.services/problems/81) | 가장 많이 나온 수 | Bronze IV | ❌ | [✔️](./src/81/Main.cpp) | ❌ | ❌ | ❌ |
 | [82](https://soj.services/problems/82) | 단어 정렬 | Unranked | ❌ | [✔️](./src/82/Main.cpp) | ❌ | ❌ | ❌ |
 | [83](https://soj.services/problems/83) | 거꾸로 된 사전 | Unranked | ❌ | [✔️](./src/83/Main.cpp) | ❌ | ❌ | ❌ |
+| [84](https://soj.services/problems/84) | 단어 이어 붙이기 (대소문자) | Unranked | ❌ | [✔️](./src/84/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
