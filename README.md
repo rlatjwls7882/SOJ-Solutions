@@ -98,7 +98,7 @@
 | [91](https://soj.services/problems/91) | 원형 수열 줄이기 | Ruby V | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [92](https://soj.services/problems/92) | 리더 찾기 | Platinum II | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [93](https://soj.services/problems/93) | 증가 수열 만들기 | Gold I | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [94](https://soj.services/problems/94) | 세 명이 모이면 한 명은 세종대생이다 2 | Diamond II | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [94](https://soj.services/problems/94) | 세 명이 모이면 한 명은 세종대생이다 2 | Diamond II | ❌ | [✔️](./src/94/Main.cpp) | ❌ | ❌ | ❌ |
 | [95](https://soj.services/problems/95) | 쉬운 문제만 출제할게요 | Gold V | ❌ | [✔️](./src/95/Main.cpp) | ❌ | ❌ | ❌ |
 
 
