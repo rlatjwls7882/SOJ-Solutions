@@ -2,7 +2,7 @@
 using namespace std;
 
 typedef long long ll;
-const int MAX=2'000'001;
+const int MAX=3'000'001;
 
 ll a[MAX];
 
