@@ -95,7 +95,7 @@
 | [88](https://soj.services/problems/88) | 균형 잡힌 수열 만들기 | Platinum IV | ❌ | [✔️](./src/88/Main.cpp) | ❌ | ❌ | ❌ |
 | [89](https://soj.services/problems/89) | 고기만두 | Bronze III | ❌ | [✔️](./src/89/Main.cpp) | ❌ | ❌ | ❌ |
 | [90](https://soj.services/problems/90) | 파이 쟁탈전 | Gold III | ❌ | [✔️](./src/90/Main.cpp) | ❌ | ❌ | ❌ |
-| [91](https://soj.services/problems/91) | 원형 수열 줄이기 | Ruby V | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [91](https://soj.services/problems/91) | 원형 수열 줄이기 | Ruby V | ❌ | [✔️](./src/91/Main.cpp) | ❌ | ❌ | ❌ |
 | [92](https://soj.services/problems/92) | 리더 찾기 | Platinum II | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [93](https://soj.services/problems/93) | 증가 수열 만들기 | Gold I | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [94](https://soj.services/problems/94) | 세 명이 모이면 한 명은 세종대생이다 2 | Diamond II | ❌ | ❌ | ❌ | ❌ | ❌ |
