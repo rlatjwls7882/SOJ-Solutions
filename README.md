@@ -92,7 +92,7 @@
 | [85](https://soj.services/problems/85) | 겹치지 않게 찾기 | Unranked | ❌ | [✔️](./src/85/Main.cpp) | ❌ | ❌ | ❌ |
 | [86](https://soj.services/problems/86) | 세 명이 모이면 한 명은 세종대생이다 | Bronze III | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [87](https://soj.services/problems/87) | 마지막 잎새 | Silver II | ❌ | ❌ | ❌ | ❌ | ❌ |
-| [88](https://soj.services/problems/88) | 균형 잡힌 수열 만들기 | Platinum IV | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [88](https://soj.services/problems/88) | 균형 잡힌 수열 만들기 | Platinum IV | ❌ | [✔️](./src/88/Main.cpp) | ❌ | ❌ | ❌ |
 | [89](https://soj.services/problems/89) | 고기만두 | Bronze III | ❌ | [✔️](./src/89/Main.cpp) | ❌ | ❌ | ❌ |
 | [90](https://soj.services/problems/90) | 파이 쟁탈전 | Gold III | ❌ | [✔️](./src/90/Main.cpp) | ❌ | ❌ | ❌ |
 | [91](https://soj.services/problems/91) | 원형 수열 줄이기 | Ruby V | ❌ | ❌ | ❌ | ❌ | ❌ |
