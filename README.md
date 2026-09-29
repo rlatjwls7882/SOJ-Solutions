@@ -90,6 +90,16 @@
 | [83](https://soj.services/problems/83) | 거꾸로 된 사전 | Unranked | ❌ | [✔️](./src/83/Main.cpp) | ❌ | ❌ | ❌ |
 | [84](https://soj.services/problems/84) | 단어 이어 붙이기 (대소문자) | Unranked | ❌ | [✔️](./src/84/Main.cpp) | ❌ | ❌ | ❌ |
 | [85](https://soj.services/problems/85) | 겹치지 않게 찾기 | Unranked | ❌ | [✔️](./src/85/Main.cpp) | ❌ | ❌ | ❌ |
+| [86](https://soj.services/problems/86) | 세 명이 모이면 한 명은 세종대생이다 | Bronze III | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [87](https://soj.services/problems/87) | 마지막 잎새 | Silver II | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [88](https://soj.services/problems/88) | 균형 잡힌 수열 만들기 | Platinum IV | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [89](https://soj.services/problems/89) | 고기만두 | Bronze III | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [90](https://soj.services/problems/90) | 파이 쟁탈전 | Gold III | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [91](https://soj.services/problems/91) | 원형 수열 줄이기 | Ruby V | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [92](https://soj.services/problems/92) | 리더 찾기 | Platinum II | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [93](https://soj.services/problems/93) | 증가 수열 만들기 | Gold I | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [94](https://soj.services/problems/94) | 세 명이 모이면 한 명은 세종대생이다 2 | Diamond II | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [95](https://soj.services/problems/95) | 쉬운 문제만 출제할게요 | Gold V | ❌ | [✔️](./src/95/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
