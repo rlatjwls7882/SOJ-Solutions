@@ -91,7 +91,7 @@
 | [84](https://soj.services/problems/84) | 단어 이어 붙이기 (대소문자) | Unranked | ❌ | [✔️](./src/84/Main.cpp) | ❌ | ❌ | ❌ |
 | [85](https://soj.services/problems/85) | 겹치지 않게 찾기 | Unranked | ❌ | [✔️](./src/85/Main.cpp) | ❌ | ❌ | ❌ |
 | [86](https://soj.services/problems/86) | 세 명이 모이면 한 명은 세종대생이다 | Bronze III | ❌ | [✔️](./src/86/Main.cpp) | ❌ | ❌ | ❌ |
-| [87](https://soj.services/problems/87) | 마지막 잎새 | Silver II | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [87](https://soj.services/problems/87) | 마지막 잎새 | Silver II | ❌ | [✔️](./src/87/Main.cpp) | ❌ | ❌ | ❌ |
 | [88](https://soj.services/problems/88) | 균형 잡힌 수열 만들기 | Platinum IV | ❌ | [✔️](./src/88/Main.cpp) | ❌ | ❌ | ❌ |
 | [89](https://soj.services/problems/89) | 고기만두 | Bronze III | ❌ | [✔️](./src/89/Main.cpp) | ❌ | ❌ | ❌ |
 | [90](https://soj.services/problems/90) | 파이 쟁탈전 | Gold III | ❌ | [✔️](./src/90/Main.cpp) | ❌ | ❌ | ❌ |
