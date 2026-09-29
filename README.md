@@ -100,6 +100,7 @@
 | [93](https://soj.services/problems/93) | 증가 수열 만들기 | Gold I | ❌ | [✔️](./src/93/Main.cpp) | ❌ | ❌ | ❌ |
 | [94](https://soj.services/problems/94) | 세 명이 모이면 한 명은 세종대생이다 2 | Diamond II | ❌ | [✔️](./src/94/Main.cpp) | ❌ | ❌ | ❌ |
 | [95](https://soj.services/problems/95) | 쉬운 문제만 출제할게요 | Gold V | ❌ | [✔️](./src/95/Main.cpp) | ❌ | ❌ | ❌ |
+| [96](https://soj.services/problems/96) | 야채가 싫어요 | Silver V | ❌ | [✔️](./src/96/Main.cpp) | ❌ | ❌ | ❌ |
 
 
 ## 기여자
