@@ -33,7 +33,7 @@ vector<point> graham_scan(vector<point> v) {
     sort(v.begin(), v.end());
     vector<point> stk;
     for(auto e:v) {
-        while(stk.size()>2 && ccw(stk[stk.size()-2], stk.back(), e)<=0) stk.pop_back();
+        while(stk.size()>=2 && ccw(stk[stk.size()-2], stk.back(), e)<=0) stk.pop_back();
         stk.push_back(e);
     }
     return stk;
@@ -46,7 +46,7 @@ ll rotating_calipers(vector<point> v) {
     ll ret=0, i=0, j=1;
     while(i<n && j<n) {
         ret=max(ret, dist(v[i], v[j]));
-        if(ccw(v[i], v[i+1], v[j], v[j+1])>0) j++;
+        if(ccw(v[i], v[(i+1)%n], v[j], v[(j+1)%n])>0) j++;
         else i++;
     }
     return ret;
