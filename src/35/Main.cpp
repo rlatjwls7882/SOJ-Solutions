@@ -7,5 +7,5 @@ int main() {
 
     long long res=1;
     while(b--) res = res*a%m;
-    cout << res;
+    cout << res%m;
 }
