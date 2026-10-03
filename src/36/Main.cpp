@@ -8,7 +8,7 @@ long long pow(long long a, long long b, long long m) {
         a=a*a%m;
         b>>=1;
     }
-    return ret;
+    return ret%m;
 }
 
 int main() {
