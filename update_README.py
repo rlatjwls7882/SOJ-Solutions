@@ -1,17 +1,12 @@
+import json
 import os
 import re
 import sys
 import time
 from pathlib import Path
-from urllib.parse import quote
-
-import requests
-
-try:
-    from tqdm import tqdm
-except ImportError:
-    def tqdm(iterable, **_):
-        return iterable
+from urllib.error import HTTPError, URLError
+from urllib.parse import quote, urlencode
+from urllib.request import Request, urlopen
 
 
 README_PATH = Path("README.md")
@@ -20,29 +15,39 @@ SOLUTION_ROOT = Path("src")
 SOJ_BASE_URL = os.getenv("SOJ_BASE_URL", "https://soj.services").rstrip("/")
 SOJ_API_BASE = os.getenv("SOJ_API_BASE", f"{SOJ_BASE_URL}/api").rstrip("/")
 
-OK_MARK = "✔️"
-NO_MARK = "❌"
-
-CONNECT_TIMEOUT = 10
-READ_TIMEOUT = 30
+REQUEST_TIMEOUT = 30
 REQUEST_RETRIES = 5
 REQUEST_BACKOFF_SECONDS = 2
 PAGE_SIZE = 500
 
-# README.md가 이미 있다면 SOJ 서버의 일시적인 장애 때문에 workflow 전체를
-# 실패시키지 않는다. 엄격하게 실패 처리하려면 환경 변수에 FAIL_ON_API_ERROR=true를 설정한다.
 FAIL_ON_API_ERROR = os.getenv("FAIL_ON_API_ERROR", "false").lower() in {
     "1",
     "true",
     "yes",
 }
 
-CONTRIBUTORS = [
-    "rlatjwls7882",
-]
+SOLUTION_RE = re.compile(r"^(?P<problem_id>\d+)(?P<extension>\.[^.]+)$")
 
-SESSION = requests.Session()
-SESSION.headers.update({"User-Agent": "soj-solutions-readme-updater"})
+LANGUAGE_NAMES = {
+    ".c": "C",
+    ".cpp": "C++",
+    ".java": "Java",
+    ".py": "Python",
+    ".rs": "Rust",
+    ".kt": "Kotlin",
+    ".go": "Go",
+    ".cs": "C#",
+    ".js": "JavaScript",
+    ".ts": "TypeScript",
+}
+
+LANGUAGE_ORDER = {
+    ".c": 0,
+    ".cpp": 1,
+    ".java": 2,
+    ".py": 3,
+    ".rs": 4,
+}
 
 
 class SojApiError(RuntimeError):
@@ -55,26 +60,30 @@ class SojApiUnavailableError(SojApiError):
 
 def request_json(path, params=None):
     url = f"{SOJ_API_BASE}{path}"
+    if params:
+        url += "?" + urlencode(params)
+
+    request = Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "soj-solutions-readme-updater",
+        },
+    )
 
     last_error = None
+
     for attempt in range(1, REQUEST_RETRIES + 1):
         try:
-            response = SESSION.get(
-                url,
-                params=params,
-                timeout=(CONNECT_TIMEOUT, READ_TIMEOUT),
-            )
-            response.raise_for_status()
-            return response.json()
-        except requests.HTTPError as error:
-            status = error.response.status_code if error.response is not None else None
-
-            # 잘못된 URL이나 권한 문제는 재시도해도 해결되지 않는다.
-            if status is not None and 400 <= status < 500 and status != 429:
-                raise SojApiError(f"SOJ API returned HTTP {status}: {url}") from error
-
+            with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
+                return json.load(response)
+        except HTTPError as error:
+            if 400 <= error.code < 500 and error.code != 429:
+                raise SojApiError(
+                    f"SOJ API returned HTTP {error.code}: {url}"
+                ) from error
             last_error = error
-        except (requests.ConnectionError, requests.Timeout, ValueError) as error:
+        except (URLError, TimeoutError, json.JSONDecodeError, OSError) as error:
             last_error = error
 
         print(
@@ -91,6 +100,42 @@ def request_json(path, params=None):
     raise SojApiUnavailableError(f"SOJ API is unavailable: {url}") from last_error
 
 
+def extract_items(data, key):
+    if isinstance(data, list):
+        return data
+
+    if not isinstance(data, dict):
+        return []
+
+    for candidate in (key, "content", "items"):
+        items = data.get(candidate)
+        if isinstance(items, list):
+            return items
+
+    return []
+
+
+def has_next_page(data, page):
+    if not isinstance(data, dict):
+        return False
+
+    if isinstance(data.get("last"), bool):
+        return not data["last"]
+
+    total_pages = data.get("totalPages", data.get("total_pages"))
+    if total_pages is not None:
+        return page + 1 < int(total_pages)
+
+    return False
+
+
+def problem_id(problem):
+    try:
+        return int(problem.get("id"))
+    except (TypeError, ValueError):
+        return 10**18
+
+
 def fetch_problems():
     problems = []
     page = 0
@@ -104,116 +149,71 @@ def fetch_problems():
 
         page += 1
 
-    return sorted(problems, key=lambda problem: int(problem.get("id", 0)))
+    problems = [problem for problem in problems if problem_id(problem) != 10**18]
+
+    if not problems:
+        raise SojApiError("SOJ problem API returned an empty problem list")
+
+    return sorted(problems, key=problem_id)
 
 
-def fetch_languages():
-    data = request_json("/languages")
-    languages = extract_items(data, "languages")
+def scan_solutions():
+    if not SOLUTION_ROOT.is_dir():
+        raise RuntimeError(f"solution directory does not exist: {SOLUTION_ROOT}")
 
-    if not languages:
-        raise SojApiError("SOJ language API returned empty language list")
+    solutions = {}
+    invalid_entries = []
 
-    return [normalize_language(language) for language in languages]
-
-
-def extract_items(data, key):
-    if isinstance(data, list):
-        return data
-
-    if isinstance(data, dict):
-        items = data.get(key, [])
-        return items if isinstance(items, list) else []
-
-    return []
-
-
-def has_next_page(data, page):
-    if not isinstance(data, dict):
-        return False
-
-    if "last" in data:
-        return not data["last"]
-
-    if "totalPages" in data:
-        return page + 1 < int(data["totalPages"])
-
-    return False
-
-
-def normalize_language(language):
-    name = str(language.get("name", "")).strip()
-    source_file = str(language.get("sourceFile", "")).strip()
-    extension = str(language.get("extension", "")).strip()
-
-    if not extension and source_file:
-        extension = Path(source_file).suffix
-
-    if extension and not extension.startswith("."):
-        extension = f".{extension}"
-
-    return {
-        "name": name,
-        "displayName": display_language_name(name),
-        "sourceFile": source_file,
-        "extension": extension,
-    }
-
-
-def display_language_name(name):
-    # C++20 -> C++, Java 21 -> Java, Python 3 -> Python
-    return re.sub(r"\s*\d+(?:\.\d+)*$", "", str(name).strip()).strip()
-
-
-def visible_languages(languages):
-    return [
-        language
-        for language in languages
-        if language["name"]
-        and language["displayName"]
-        and language["sourceFile"]
-        and language["extension"]
-    ]
-
-
-def solution_candidates(problem_id, language):
-    extension = language["extension"]
-    source_name = Path(language["sourceFile"]).name
-
-    names = [
-        source_name,
-        f"Main{extension}",
-        f"main{extension}",
-    ]
-
-    seen = set()
-    for name in names:
-        if not name or name in seen:
+    for path in SOLUTION_ROOT.iterdir():
+        if path.name.startswith("."):
             continue
 
-        seen.add(name)
-        yield SOLUTION_ROOT / str(problem_id) / name
+        if not path.is_file():
+            invalid_entries.append(path.as_posix())
+            continue
+
+        match = SOLUTION_RE.fullmatch(path.name)
+        if match is None:
+            invalid_entries.append(path.as_posix())
+            continue
+
+        pid = int(match.group("problem_id"))
+        extension = match.group("extension").lower()
+        solutions.setdefault(pid, {})[extension] = path
+
+    if invalid_entries:
+        entries = "\n".join(f"  - {entry}" for entry in sorted(invalid_entries))
+        raise RuntimeError(
+            "src must contain only flat '<problem_id>.<extension>' files:\n"
+            + entries
+        )
+
+    return solutions
 
 
-def find_solution_path(problem_id, language):
-    for path in solution_candidates(problem_id, language):
-        if path.is_file():
-            return path
-
-    return None
+def language_name(extension):
+    return LANGUAGE_NAMES.get(extension, extension.removeprefix(".").upper())
 
 
-def solution_cell(problem_id, language):
-    path = find_solution_path(problem_id, language)
+def language_sort_key(extension):
+    return (
+        LANGUAGE_ORDER.get(extension, 100),
+        language_name(extension).lower(),
+        extension,
+    )
 
-    if path is None:
-        return NO_MARK
 
-    return f"[{OK_MARK}](./{md_link(path)})"
+def used_languages(solutions):
+    extensions = {
+        extension
+        for problem_solutions in solutions.values()
+        for extension in problem_solutions
+    }
+    return sorted(extensions, key=language_sort_key)
 
 
-def problem_url(problem_id):
-    return f"{SOJ_BASE_URL}/problems/{problem_id}"
+def problem_url(pid):
+    return f"{SOJ_BASE_URL}/problems/{pid}"
 
 
 def md_link(path):
@@ -233,45 +233,21 @@ def make_row(values):
     return "| " + " | ".join(values) + " |"
 
 
-def make_contributors_section():
-    if not CONTRIBUTORS:
-        return ""
+def solution_cell(pid, extension, solutions):
+    path = solutions.get(pid, {}).get(extension)
+    if path is None:
+        return "❌"
 
-    cells = []
-    for username in CONTRIBUTORS:
-        cells.append(f"""    <td align="center">
-      <a href="https://github.com/{username}">
-        <img src="https://github.com/{username}.png" width="100px;" alt="{username}"/>
-        <br />
-        <sub><b>{username}</b></sub>
-      </a>
-    </td>""")
-
-    rows = []
-    for i in range(0, len(cells), 6):
-        rows.append("  <tr>\n" + "\n".join(cells[i:i + 6]) + "\n  </tr>")
-
-    return """## 기여자
-
-<table>
-""" + "\n".join(rows) + """
-</table>
-"""
+    return f"[✔️](./{md_link(path)})"
 
 
 def get_header():
-    return "\n".join([
-        "# SOJ Solutions",
-        "",
-        "[Seojin Online Judge](https://soj.services)의 공식 풀이 저장소입니다.",
-        "",
-    ])
+    return "# SOJ Solutions\n\n"
 
 
-def get_table(problems, languages):
+def get_table(problems, languages, solutions):
     headers = ["번호", "문제", "난이도"] + [
-        md_escape(language["displayName"])
-        for language in languages
+        language_name(extension) for extension in languages
     ]
     aligns = [":---:", ":---", ":---:"] + [":---:"] * len(languages)
 
@@ -282,34 +258,58 @@ def get_table(problems, languages):
         make_row(aligns),
     ]
 
-    for problem in tqdm(problems, desc="Generating README"):
-        problem_id = problem.get("id")
+    problem_ids = set()
+
+    for problem in problems:
+        pid = problem_id(problem)
+        problem_ids.add(pid)
 
         row = [
-            f"[{problem_id}]({problem_url(problem_id)})",
+            f"[{pid}]({problem_url(pid)})",
             md_escape(problem.get("title")),
             md_escape(problem.get("difficulty")) or "-",
         ]
-
-        row.extend(solution_cell(problem_id, language) for language in languages)
+        row.extend(
+            solution_cell(pid, extension, solutions)
+            for extension in languages
+        )
         lines.append(make_row(row))
+
+    unknown_ids = sorted(set(solutions) - problem_ids)
+    if unknown_ids:
+        print(
+            "[README] source files exist for problem IDs not returned by SOJ API: "
+            + ", ".join(map(str, unknown_ids)),
+            file=sys.stderr,
+        )
 
     return "\n".join(lines) + "\n"
 
 
-def write_readme(problems, languages):
-    README_PATH.write_text(
-        get_header()
-        + get_table(problems, languages)
-        + "\n\n" + make_contributors_section(),
-        encoding="utf-8",
-    )
+def build_readme(problems, solutions):
+    languages = used_languages(solutions)
+    return get_header() + get_table(problems, languages, solutions)
+
+
+def write_readme(content):
+    current = None
+    if README_PATH.is_file():
+        current = README_PATH.read_text(encoding="utf-8-sig")
+
+    if current == content:
+        print("[README] README.md is already up to date.")
+        return False
+
+    README_PATH.write_text(content, encoding="utf-8", newline="\n")
+    print("[README] README.md updated.")
+    return True
 
 
 def main():
+    solutions = scan_solutions()
+
     try:
         problems = fetch_problems()
-        languages = visible_languages(fetch_languages())
     except SojApiUnavailableError as error:
         if README_PATH.is_file() and not FAIL_ON_API_ERROR:
             print(f"[SOJ API] {error}", file=sys.stderr)
@@ -318,7 +318,7 @@ def main():
 
         raise
 
-    write_readme(problems, languages)
+    write_readme(build_readme(problems, solutions))
 
 
 if __name__ == "__main__":
