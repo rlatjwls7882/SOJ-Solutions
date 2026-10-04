@@ -1,7 +1,5 @@
 # SOJ Solutions
 
-## 풀이 목록
-
 | 번호 | 문제 | 난이도 | C | C++ | Java | Python | Rust |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | [1](https://soj.services/problems/1) | Hello, World! | Bronze V | [✔️](./src/1.c) | [✔️](./src/1.cpp) | [✔️](./src/1.java) | [✔️](./src/1.py) | [✔️](./src/1.rs) |
