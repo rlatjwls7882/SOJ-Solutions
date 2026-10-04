@@ -252,8 +252,6 @@ def get_table(problems, languages, solutions):
     aligns = [":---:", ":---", ":---:"] + [":---:"] * len(languages)
 
     lines = [
-        "## 풀이 목록",
-        "",
         make_row(headers),
         make_row(aligns),
     ]
