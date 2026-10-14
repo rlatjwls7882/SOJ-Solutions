@@ -76,7 +76,7 @@
 | [72](https://soj.services/problems/72) | 목표 달성 시점 | Platinum I | ❌ | [✔️](./src/72.cpp) | ❌ | ❌ | ❌ |
 | [73](https://soj.services/problems/73) | 직선의 최솟값 | Platinum II | ❌ | [✔️](./src/73.cpp) | ❌ | ❌ | ❌ |
 | [74](https://soj.services/problems/74) | 트랜스포머 나이트 | Silver II | ❌ | [✔️](./src/74.cpp) | ❌ | ❌ | ❌ |
-| [75](https://soj.services/problems/75) | 문자열 단어 단위로 분리하기 | Bronze III | ❌ | [✔️](./src/75.cpp) | ❌ | ❌ | ❌ |
+| [75](https://soj.services/problems/75) | fgets로 문장 읽고 단어 분리하기 | Bronze III | ❌ | [✔️](./src/75.cpp) | ❌ | ❌ | ❌ |
 | [76](https://soj.services/problems/76) | 문자열 회전시키기 | Bronze IV | ❌ | [✔️](./src/76.cpp) | ❌ | ❌ | ❌ |
 | [77](https://soj.services/problems/77) | 문자열 비교하기 | Unranked | ❌ | [✔️](./src/77.cpp) | ❌ | ❌ | ❌ |
 | [78](https://soj.services/problems/78) | 문자열 삽입하기 | Unranked | ❌ | [✔️](./src/78.cpp) | ❌ | ❌ | ❌ |
@@ -98,3 +98,4 @@
 | [94](https://soj.services/problems/94) | 세 명이 모이면 한 명은 세종대생이다 2 | Diamond II | ❌ | [✔️](./src/94.cpp) | ❌ | ❌ | ❌ |
 | [95](https://soj.services/problems/95) | 쉬운 문제만 출제할게요 | Gold V | ❌ | [✔️](./src/95.cpp) | ❌ | ❌ | ❌ |
 | [96](https://soj.services/problems/96) | 야채가 싫어요 | Silver V | ❌ | [✔️](./src/96.cpp) | ❌ | ❌ | ❌ |
+| [97](https://soj.services/problems/97) | 양끝에서 공부하기 | Silver IV | ❌ | [✔️](./src/97.cpp) | ❌ | ❌ | ❌ |
