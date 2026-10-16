@@ -33,8 +33,6 @@ mt19937 rd((unsigned)chrono::steady_clock::now().time_since_epoch().count());
 uniform_int_distribution<int> rnd_int(0, 0); // rnd_int(rd)
 uniform_real_distribution<double> rnd_real(0, 1); // rnd_real(rd)
 
-// p(0)..p(n): 순서를 무시한 양의 정수 분할 수 % M. n>=0, 1<=M<=INT_MAX
-// p(n)=Σ(-1)^(k+1){p(n-k(3k-1)/2)+p(n-k(3k+1)/2)}, 범위 밖 항은 0
 vi PartitionNumbers(int n,int M){
     vi p(n+1);p[0]=1%M;
     for(int i=1;i<=n;i++){
