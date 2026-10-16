@@ -1,0 +1,59 @@
+#include<bits/stdc++.h>
+#include<ext/pb_ds/assoc_container.hpp>
+#include<ext/pb_ds/tree_policy.hpp>
+#include<ext/rope>
+#pragma GCC optimize("O3,unroll-loops")
+#pragma GCC target("fma")
+using namespace std;
+using namespace __gnu_pbds;
+using namespace __gnu_cxx;
+
+#define x first
+#define y second
+#define sz(x) (int)(x).size()
+#define all(x) x.begin(), x.end()
+#define compress(x) sort(all(x)), x.erase(unique(all(x)), x.end())
+
+typedef long long ll;
+typedef long double ld;
+typedef __int128 i128;
+typedef pair<int, int> pii;
+typedef pair<ll, ll> pll;
+typedef vector<int> vi;
+typedef vector<ll> vll;
+template<typename T> using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+template<typename T> T sq(T x) { return x*x; }
+
+const int INF = 0x3f3f3f3f;
+const ll LINF = 0x3f3f3f3f3f3f3f3f;
+const ld PI = acosl(-1);
+const ld EPS = 1e-10;
+
+mt19937 rd((unsigned)chrono::steady_clock::now().time_since_epoch().count());
+uniform_int_distribution<int> rnd_int(0, 0); // rnd_int(rd)
+uniform_real_distribution<double> rnd_real(0, 1); // rnd_real(rd)
+
+// p(0)..p(n): 순서를 무시한 양의 정수 분할 수 % M. n>=0, 1<=M<=INT_MAX
+// p(n)=Σ(-1)^(k+1){p(n-k(3k-1)/2)+p(n-k(3k+1)/2)}, 범위 밖 항은 0
+vi PartitionNumbers(int n,int M){
+    vi p(n+1);p[0]=1%M;
+    for(int i=1;i<=n;i++){
+        ll s=0;
+        for(ll k=1;k*(3*k-1)/2<=i;k++){
+            int sign=k&1?1:-1;s=(s+sign*p[i-k*(3*k-1)/2])%M;
+            if(k*(3*k+1)/2<=i)s=(s+sign*p[i-k*(3*k+1)/2])%M;
+        }
+        p[i]=(s+M)%M;
+    }return p;
+}
+
+int main() {
+    cin.tie(0)->sync_with_stdio(0);
+    int t;cin>>t;
+    while(t--){
+        int n,m;cin>>n>>m;
+        auto ret=PartitionNumbers(n,m);
+        for(auto e:ret)cout<<e<<' ';
+        cout<<'\n';
+    }
+}
