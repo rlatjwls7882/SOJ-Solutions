@@ -101,4 +101,4 @@
 | [97](https://soj.services/problems/97) | 양끝에서 공부하기 | Silver IV | ❌ | [✔️](./src/97.cpp) | ❌ | ❌ | ❌ |
 | [98](https://soj.services/problems/98) | 다항식의 곱 | Diamond V | ❌ | [✔️](./src/98.cpp) | ❌ | ❌ | ❌ |
 | [99](https://soj.services/problems/99) | XOR 합성곱 | Diamond IV | ❌ | [✔️](./src/99.cpp) | ❌ | ❌ | ❌ |
-| [100](https://soj.services/problems/100) | 선행 작업 스케줄링 | Diamond II | ❌ | ❌ | ❌ | ❌ | ❌ |
+| [100](https://soj.services/problems/100) | 선행 작업 스케줄링 | Diamond II | ❌ | [✔️](./src/100.cpp) | ❌ | ❌ | ❌ |
